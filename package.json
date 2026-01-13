@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack --port 3000",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "ts:check": "tsc --noEmit"
   },
   "dependencies": {
     "next": "16.1.1",
@@ -14,13 +16,14 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@bluzzi/eslint-config": "^2.1.1",
+    "@eslint/eslintrc": "^3.3.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
