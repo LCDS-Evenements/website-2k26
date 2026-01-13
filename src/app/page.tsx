@@ -1,6 +1,9 @@
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <h1 className="font-roboto">Titre en Roboto</h1>
+      <h2 className="font-salted">Titre en Salted</h2>
+    </div>
   );
 };
 
