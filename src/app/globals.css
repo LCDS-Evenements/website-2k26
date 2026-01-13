@@ -16,3 +16,24 @@
 .font-salted {
   font-family: 'Salted', sans-serif;
 }
+
+@utility bg-gradient-landing {
+  background: linear-gradient(180deg, #6683BE 0%, #8AA3D2 16.83%, #F2C8DE 67.31%, #EDB2D0 100%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

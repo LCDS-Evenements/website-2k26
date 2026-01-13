@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Footer } from "#/layout/footer";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -61,6 +62,8 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
     <html lang="fr">
       <body className={`${roboto.variable} antialiased`}>
         {children}
+
+        <Footer />
       </body>
     </html>
   );

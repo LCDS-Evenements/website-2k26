@@ -1,9 +1,22 @@
+import { LandingSection } from "#/sections/landing.section";
+import { LineUpSection } from "#/sections/line-up.section";
+import { SponsorsSection } from "#/sections/sponsors.section";
+import { StorySection } from "#/sections/story.section";
+import { TimeTableSection } from "#/sections/time-table.section";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1 className="font-roboto">Titre en Roboto</h1>
-      <h2 className="font-salted">Titre en Salted</h2>
-    </div>
+    <main>
+      <LandingSection />
+
+      <TimeTableSection />
+
+      <LineUpSection />
+
+      <StorySection />
+
+      <SponsorsSection />
+    </main>
   );
 };
 
