@@ -22,7 +22,7 @@ const sponsors: Sponsor[] = [
 
 export const SponsorsSection = () => {
   return (
-    <section className="h-[8dvh] border-b">
+    <section id="#sponsors" className="h-[8dvh] border-b">
       <div className="relative flex overflow-hidden">
         <div className="flex animate-marquee gap-8 h-full">
           {sponsors.map((sponsor) => (

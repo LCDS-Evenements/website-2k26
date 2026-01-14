@@ -40,8 +40,8 @@ export const LandingSection = () => {
   const formatNumber = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <section className="h-[130dvh] bg-gradient-landing pt-24 flex items-center flex-col">
-      <div className="flex items-center justify-center gap-6 font-mono font-extralight text-[#FDFCEB]">
+    <section id="#" className="h-[130dvh] bg-gradient-landing pt-36 flex items-center flex-col">
+      <div className="flex items-center justify-center gap-6 font-mono font-extralight text-[#FDFCEB] tracking-widest">
         <div className="flex items-center flex-col">
           <span className="text-8xl">{timeLeft.days}</span>
 
@@ -91,8 +91,8 @@ export const LandingSection = () => {
             <path
               d="M7.81929 1C7.81929 1.12657 7.81929 1.25315 7.81929 18.0153C7.81929 34.7775 7.81929 68.1714 7.51465 101.486"
               stroke="#FDFCEB"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
 
             <path
